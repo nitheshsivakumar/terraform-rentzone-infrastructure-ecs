@@ -87,3 +87,11 @@ module "s3_bucket" {
   env_file_bucket_name = var.env_file_bucket_name
   env_file_name        = var.env_file_name
 }
+
+# create ecs task execution role
+module "ecs_task_execution_role" {
+  source               = "git@github.com:nitheshsivakumar/terraform-modules.git//iam-role"
+  project_name         = local.project_name
+  env_file_bucket_name = module.s3_bucket.env_file_bucket_name
+  environment          = local.environment
+}
