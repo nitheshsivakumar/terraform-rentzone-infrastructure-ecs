@@ -65,3 +65,25 @@ module "ss_certificate" {
   domain_name       = var.domain_name
   alternative_names = var.alternative_names
 }
+
+# create application load balancer
+module "application_load_balancer" {
+  source                = "git@github.com:nitheshsivakumar/terraform-modules.git//alb"
+  project_name          = local.project_name
+  environment           = local.environment
+  alb_security_group_id = module.security_group.alb_security_group_id
+  public_subnet_az1_id  = module.vpc.public_subnet_az1_id
+  public_subnet_az2_id  = module.vpc.public_subnet_az2_id
+  target_type           = var.target_type
+  vpc_id                = module.vpc.vpc_id
+  certificate_arn       = module.ss_certificate.certificate_arn
+
+}
+
+# create s3 bucket
+module "s3_bucket" {
+  source               = "git@github.com:nitheshsivakumar/terraform-modules.git//s3"
+  project_name         = local.project_name
+  env_file_bucket_name = var.env_file_bucket_name
+  env_file_name        = var.env_file_name
+}
