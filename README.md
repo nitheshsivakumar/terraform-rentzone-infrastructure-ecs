@@ -1,4 +1,4 @@
-# Automate Dynamic Web App Deployment with Terraform, Docker, Amazon ECR, and ECS
+# Automate Dynamic Web App Deployment with Terraform Modules, Docker, Amazon ECR, and ECS
 
 **Terraform Modules referenced**: https://github.com/nitheshsivakumar/terraform-modules
 
