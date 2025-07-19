@@ -1,6 +1,6 @@
 # 🚗 RentZone - Containerized Web App Deployment on AWS with Terraform, Docker, Amazon ECR, and ECS
 
-## Terraform Modules reference: https://github.com/nitheshsivakumar/terraform-modules
+## Terraform Modules referenced: https://github.com/nitheshsivakumar/terraform-modules
 
 ## 📌 Project Overview
 
