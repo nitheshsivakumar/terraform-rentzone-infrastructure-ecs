@@ -1,5 +1,7 @@
 # 🚗 RentZone - Containerized Web App Deployment on AWS with Terraform, Docker, Amazon ECR, and ECS
 
+## Terraform Modules reference: https://github.com/nitheshsivakumar/terraform-modules
+
 ## 📌 Project Overview
 
 RentZone is a **containerized car rental web application** deployed on **AWS** using **Terraform, Docker, Amazon ECR, and ECS with AWS Fargate**. This project automates **infrastructure provisioning, container orchestration, and database restoration** from a previous snapshot for efficiency and scalability.
