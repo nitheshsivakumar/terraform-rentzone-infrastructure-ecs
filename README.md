@@ -32,9 +32,6 @@ This project involves deploying the **RentZone car rental application** on **AWS
 - **AWS Certificate Manager (ACM)** - Enabling HTTPS encryption.
 - **IAM Roles & Policies** - Managing permissions for security.
 
-📌 **Reference Architecture:**  
-![Architecture](RentZone-Terraform-Modules.jpg)
-
 ---
 
 ## 🚀 What I Did
